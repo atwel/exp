@@ -1,0 +1,22 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    Instructions, Page 4 of 5
+{% endblock %}
+
+{% block content %}
+
+<div style="font-size:20px">
+	<br>
+	<p>
+    		Once you and your partner for that round have submitted names, you will both be shown the name the other submitted. If you matched, you will be rewarded. If you did not matched, you are then penalized. 
+	</p>
+	<br>
+    	<p>
+    		You will also be shown a name played elsewhere in the group in that round. It is choosen randomly from the players you are <strong>not</strong> partners with. There is <strong>no</strong> reward for matching with this name or penalty for failing to match. 
+    	</p>
+	<br>
+</div>
+{% next_button %}
+{% endblock %}

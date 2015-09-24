@@ -1,0 +1,24 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    Thank you!
+{% endblock %}
+
+{% block content %}
+<br><br>
+
+<strong>Thank you so much for helping me with this test trial!</strong>
+<br>
+<br>
+<p>
+I couldn't say much about the theoretical question the experiment addresses because doing so might prime you too much and change your behavior. If you want to hear about my theoretical framing and the results of the trial, just add your email below. I'll send you something once I go through the data and write some stuff up.</p>
+<br>
+-Jon
+<br>
+<br>
+{% formfield player.email_update %}
+<br>
+{% next_button %}
+
+{% endblock %}

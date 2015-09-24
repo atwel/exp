@@ -1,0 +1,28 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    Survey Questions
+{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<br>
+    <p>
+        <strong>Question 1:</strong> Did information about names played elsewhere in the group ever influence your choice of name in the <strong>next</strong> turn?
+    </p>
+
+    {% formfield player.stigmergy_next %}
+    <br>
+    <br>
+    <p>
+        <strong>Question 2:</strong> Did information about names played elsewhere in the group influence your choice of name in <strong>any</strong> turn?
+    </p>
+
+    {% formfield player.stigmergy_ever %}
+
+    <br>
+    {% next_button %}
+
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+
+{% block content %}
+<table style="width:100%">
+	<tr>
+		<td style="width:80%">
+			<table>
+				<tr>
+					<td style="width:35%"><h3>Name Game</h3><p>Choose the name that you think best fits the image below.</p></td>
+					<td style="width:5%"></td>
+					<td style="width:20%;text-align:center">{{amount}}<p>Last reward</p></td>
+					<td style="width:20%;text-align:center">{{total_earnings}}<p>Total Earnings</p></td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<td style="width:5%"></td>
+					<td style="width:30%"><img src="{% static 'coordinate/pic_sail.png' %}" alt="Name this please" style="margin:0px auto"></td>
+					<td style="width:5%"></td>
+					<td style="width:40%"> <br> <br> <br> <br> <p>Your Choice:</p> <input type="text" name="name" autocomplete="off"><br>{% next_button %}</td>
+				</tr>
+			</table>
+		</td>
+
+		<td style="width:5%"></td>
+		<td style="width:15%">
+			<table style="font-size:11px">
+				<tr><td style="color:{{cone}}">Round 1  : {{one}}</td></tr>
+				<tr><td style="color:{{ctwo}}">Round 2  : {{two}}</td></tr>
+				<tr><td style="color:{{cthree}}">Round 3  : {{three}}</td></tr>
+				<tr><td style="color:{{cfour}}">Round 4  : {{four}}</td></tr>
+				<tr><td style="color:{{cfive}}">Round 5  : {{five}}</td></tr>
+				<tr><td style="color:{{csix}}">Round 6  : {{six}}</td></tr>
+				<tr><td style="color:{{cseven}}">Round 7  : {{seven}}</td></tr>
+				<tr><td style="color:{{ceight}}">Round 8  : {{eight}}</td></tr>
+				<tr><td style="color:{{cnine}}">Round 9  : {{nine}}</td></tr>
+				<tr><td style="color:{{cten}}">Round 10: {{ten}}</td></tr>
+				<tr><td style="color:{{celeven}}">Round 11: {{eleven}}</td></tr>
+				<tr><td style="color:{{ctwelve}}">Round 12: {{twelve}}</td></tr>
+				<tr><td style="color:{{cothree}}">Round 13: {{othree}}</td></tr>
+				<tr><td style="color:{{cofour}}">Round 14: {{ofour}}</td></tr>
+				<tr><td style="color:{{cofive}}">Round 15: {{ofive}}</td></tr>
+				<tr><td style="color:{{cosix}}">Round 16: {{osix}}</td></tr>
+				<tr><td style="color:{{coseven}}">Round 17: {{oseven}}</td></tr>
+				<tr><td style="color:{{coeight}}">Round 18: {{oeight}}</td></tr>
+				<tr><td style="color:{{conine}}">Round 19: {{onine}}</td></tr>
+				<tr><td style="color:{{coten}}">Round 20: {{twenty}}</td></tr>
+				<tr><td style="color:{{ctone}}">Round 21: {{tone}}</td></tr>
+				<tr><td style="color:{{cttwo}}">Round 22: {{ttwo}}</td></tr>
+				<tr><td style="color:{{ctthree}}">Round 23: {{tthree}}</td></tr>
+				<tr><td style="color:{{ctfour}}">Round 24: {{tfour}}</td></tr>
+				<tr><td style="color:{{ctfive}}">Round 25: {{tfive}}</td></tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+{% endblock %}
